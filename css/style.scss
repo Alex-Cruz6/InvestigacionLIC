@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . ." ". centerBox ." ". . .";
+}
+
+.Box{
+    grid-area: centerBox;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.0001px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.NoBox{
+    display: none;
+}
+
+.btn{
+    height: 5vh;
+    width: 10vw;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    border-radius: 5px;
+    pointer-events: all;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+
+        strong{
+            pointer-events: all;
+            color: red;
+        }
+    }
+}
